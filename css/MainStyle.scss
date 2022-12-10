@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import 'variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; //convert default size 16px to 10px
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    // background-color: rebeccapurple;
+    background-color: $paleBlue;
+    width: 30em;
+    height: 42em;
+    border-radius: 1em;
+
+    .image{
+        width: 100%;
+        border-radius: 1em 1em 0 0 ;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .planDiv{
+            background-color: $veryPaleBlue;
+            border-radius: 1em;
+            display: flex;
+            width: 85%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2em;
+        }
+        .cancel{
+            color: $desaturatedBlue;
+            font-weight: 900;
+        }
+    }
+    button{
+        background-color: $brightBlue;
+        border-radius: 0.75em;
+        color: white;
+        font-weight: 900;
+        font-size: 1em;
+        width: 85%;
+        padding: 1em;
+        border: none;
+    }
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1em;
+}
+
+
