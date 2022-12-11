@@ -74,9 +74,10 @@ body {
   display: block;
   padding-top: 0.2em;
 }
-.container .content .planDiv a {
+.container .content .planDiv .change {
   font-weight: 700;
   font-size: 0.9em;
+  cursor: pointer;
 }
 .container .content .planDiv::before {
   content: "";
@@ -86,27 +87,52 @@ body {
   background-repeat: no-repeat;
   background-size: 3em;
 }
+.container .content .button {
+  width: 85%;
+}
 .container .content button {
   margin-top: 2em;
   background-color: rgb(56, 41, 224);
   border-radius: 0.75em;
-  color: white;
   font-weight: 900;
   font-size: 0.9em;
-  width: 85%;
-  padding: 1.1em;
+  width: 100%;
   border: none;
   box-shadow: 0 0.75em 0.75em 0.45em rgba(56, 41, 224, 0.13);
+  cursor: pointer;
+}
+.container .content button:hover {
+  background-color: hsl(245deg, 83%, 68%);
+  transition: all 350ms ease;
+}
+.container .content .checkout {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 1.1em;
 }
 .container .content .cancel {
   margin-top: 2em;
   color: hsl(224deg, 23%, 55%);
   font-weight: 900;
   font-size: 0.95em;
+  cursor: pointer;
 }
 
 .attribution {
+  display: flex;
   position: absolute;
   bottom: 0;
   padding-bottom: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  word-spacing: 0.1em;
+  color: rgb(31, 47, 86);
+  white-space: pre;
+}
+.attribution a {
+  color: rgb(56, 41, 224);
+  letter-spacing: 0.1em;
+  font-weight: 700;
 }/*# sourceMappingURL=MainStyle.css.map */

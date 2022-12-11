@@ -69,9 +69,10 @@ body{
                 display: block;
                 padding-top: 0.2em;
             }
-            a{
+            .change{
                 font-weight: 700;
                 font-size: 0.9em;
+                cursor: pointer;
             }
         }
         .planDiv::before{
@@ -82,28 +83,54 @@ body{
             background-repeat: no-repeat;
             background-size: 3em;
         }
+        .button{
+            
+            width: 85%;
+        }
         button{
             margin-top: 2em;
             background-color: $brightBlue;
             border-radius: 0.75em;
-            color: white;
             font-weight: 900;
             font-size: 0.9em;
-            width: 85%;
-            padding: 1.1em;
+            width: 100%;
             border: none;
             box-shadow: 0 0.75em 0.75em 0.45em rgba(56, 41, 224, 0.13);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: $activeBlue;
+            transition: all 350ms ease;
+        }
+        .checkout{
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            width: 100%;
+            padding: 1.1em;
         }
         .cancel{
             margin-top: 2em;
             color: $desaturatedBlue;
             font-weight: 900;
             font-size: 0.95em;
+            cursor: pointer;
         }
     }
 }
 .attribution{
+    display: flex;
     position: absolute;
     bottom: 0;
     padding-bottom: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    word-spacing: 0.1em;
+    color: $darkBlue;
+    white-space: pre;
+    a{
+        color: $brightBlue;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+    }
 }
