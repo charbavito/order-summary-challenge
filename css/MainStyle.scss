@@ -13,6 +13,7 @@ body{
     background-image: url(../images/pattern-background-desktop.svg);
     background-color: $paleBlue;
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
